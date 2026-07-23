@@ -4,7 +4,7 @@ title: "About"
 
 ## About Math Society
 
-The Math Society is dedicated to fostering a community of mathematics enthusiasts at UBC.
+The Mathematics Society is dedicated to fostering a community of mathematics enthusiasts at the University of Cape Town.
 
 ### Our Mission
 
@@ -25,6 +25,6 @@ We aim to:
 
 ### Contact
 
-Email us at [mathsoc@ubc.ca](mailto:mathsoc@ubc.ca).
+Email us at [mathsoc@myuct.ac.za](mailto:mathsoc@myuct.ac.za).
 
-<!-- TODO: add the correct Instagram link (previous link pointed to UCT's account) -->
+Follow us on [Instagram](https://www.instagram.com/uctmaths/)

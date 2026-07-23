@@ -3,12 +3,12 @@ project:
   output-dir: _site
 
 website:
-  title: "UBC Math Society"
-  favicon: logo.svg
+  title: "UCT Mathematics Society"
+  favicon: logo.png
   site-url: https://zentannen.github.io/mathsoc/
   navbar:
-    logo: logo.svg
-    logo-alt: "UBC Math Society"
+    logo: logo.png
+    logo-alt: "UCT Mathematics Society"
     background: "#002145"
     left:
       - text: "Home"
@@ -37,7 +37,7 @@ website:
         aria-label: GitHub
   page-footer:
     background: "#002145"
-    left: "© 2026 UBC Math Society"
+    left: "© 2026 UCT Mathematics Society"
     center:
       - text: "Events"
         href: events.qmd

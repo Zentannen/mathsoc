@@ -40,18 +40,11 @@ Join our study groups for:
 - Combinatorics
 - Numerical Analysis
 
-<!--
-Governance documents temporarily unpublished: the source files ("MAMSoc
-constitution.pdf", "Maths_Society_WhatsApp_Guidelines.pdf") appear to be from
-UCT's MAM Society, not UBC. Verify/replace them, copy the correct PDFs into
-files/, and restore this section:
-
 ## Organization Documents
 
 ### Governance & Guidelines
 
-- [Math Society Constitution](files/constitution.pdf)
-- [WhatsApp Code of Conduct](files/whatsapp-guidelines.pdf)
+- [Society Constitution](files/MAMSoc_constitution.pdf)
+- [WhatsApp Code of Conduct](files/Maths_Society_WhatsApp_Guidelines.pdf)
 
 These documents outline our organization's structure, policies, and community standards.
--->

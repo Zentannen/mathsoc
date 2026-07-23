@@ -1,39 +1,39 @@
 BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:-//Math Society UBC//Math Society Calendar//EN
+PRODID:-//UCT Mathematics Society//Events Calendar//EN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
-X-WR-CALNAME:Math Society UBC Events
-X-WR-TIMEZONE:America/Vancouver
-X-WR-CALDESC:Subscribe to Math Society UBC events
+X-WR-CALNAME:UCT Mathematics Society Events
+X-WR-TIMEZONE:Africa/Johannesburg
+X-WR-CALDESC:Subscribe to UCT Mathematics Society events
 BEGIN:VEVENT
-UID:problem-solving-20260210@mathsoc.ubc.ca
+UID:problem-solving-20260210@uctmathsoc
 DTSTAMP:20260205T000000Z
-DTSTART:20260210T210000Z
-DTEND:20260210T220000Z
+DTSTART:20260210T150000Z
+DTEND:20260210T160000Z
 SUMMARY:Problem Solving Session
 DESCRIPTION:Join us for an interactive problem solving session. Work through challenging mathematical problems with fellow enthusiasts.
-LOCATION:Math 100, UBC
-URL:https://mathsoc.ubc.ca/events
+LOCATION:University of Cape Town
+URL:https://zentannen.github.io/mathsoc/events.html
 END:VEVENT
 BEGIN:VEVENT
-UID:guest-lecture-20260217@mathsoc.ubc.ca
+UID:guest-lecture-20260217@uctmathsoc
 DTSTAMP:20260205T000000Z
-DTSTART:20260217T200000Z
-DTEND:20260217T210000Z
+DTSTART:20260217T140000Z
+DTEND:20260217T150000Z
 SUMMARY:Guest Lecture: Prof. Smith
 DESCRIPTION:A special guest lecture from Prof. Smith on an exciting mathematics topic.
-LOCATION:Math 202, UBC
-URL:https://mathsoc.ubc.ca/events
+LOCATION:University of Cape Town
+URL:https://zentannen.github.io/mathsoc/events.html
 END:VEVENT
 BEGIN:VEVENT
-UID:competition-prep-20260224@mathsoc.ubc.ca
+UID:competition-prep-20260224@uctmathsoc
 DTSTAMP:20260205T000000Z
-DTSTART:20260224T220000Z
-DTEND:20260225T000000Z
+DTSTART:20260224T160000Z
+DTEND:20260224T180000Z
 SUMMARY:Math Competition Prep
 DESCRIPTION:Prepare for upcoming mathematics competitions. Learn strategies and solve practice problems.
-LOCATION:Math 100, UBC
-URL:https://mathsoc.ubc.ca/events
+LOCATION:University of Cape Town
+URL:https://zentannen.github.io/mathsoc/events.html
 END:VEVENT
 END:VCALENDAR

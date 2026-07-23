@@ -1,6 +1,6 @@
 /*-- scss:defaults --*/
 
-// Palette (UBC brand blues)
+// Palette (society brand blues, matched to the logo)
 $navy: #002145;
 $blue: #0055b7;
 $sky:  #3fa7e0;
@@ -129,6 +129,14 @@ h3 {
     max-width: 44rem;
     margin: 0 auto 1.6rem;
   }
+}
+
+.hero-logo {
+  width: 110px;
+  height: auto;
+  border-radius: 1.3rem;
+  margin-bottom: 1.25rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
 }
 
 .hero-eyebrow {

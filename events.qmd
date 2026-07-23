@@ -21,6 +21,6 @@ title: "Events"
 
 Never miss an event:
 
-[📅 Add our calendar (.ics)](mathsoc-calendar.ics){.btn .btn-primary .me-2} [✉️ Join the mailing list](mailto:mathsoc@ubc.ca){.btn .btn-outline-primary}
+[📅 Add our calendar (.ics)](mathsoc-calendar.ics){.btn .btn-primary .me-2} [✉️ Join the mailing list](mailto:mathsoc@myuct.ac.za){.btn .btn-outline-primary}
 
 The calendar file imports into Google Calendar, Outlook, Apple Calendar, or any calendar app and keeps Math Society events synced automatically.

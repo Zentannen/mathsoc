@@ -4,7 +4,7 @@ title: "Sponsors"
 
 ## Our Sponsors
 
-We're grateful for the generous support of our sponsors, who make it possible to host events, provide resources, and build our mathematics community at UBC.
+We're grateful for the generous support of our sponsors, who make it possible to host events, provide resources, and build our mathematics community at UCT.
 
 ## Platinum Sponsors
 
@@ -22,9 +22,8 @@ We're grateful for the generous support of our sponsors, who make it possible to
 
 We also thank the following organizations for their ongoing support:
 
-- Department of Mathematics, UBC
-- Faculty of Science, UBC
-- Graduate and Professional Students' Association (GPSA)
+- Department of Mathematics and Applied Mathematics, UCT
+- Faculty of Science, UCT
 
 ## Become a Sponsor
 
@@ -45,7 +44,7 @@ Sponsorship packages include:
 
 ## Contact Us
 
-For sponsorship inquiries, please reach out to us at [mathsoc@ubc.ca](mailto:mathsoc@ubc.ca)
+For sponsorship inquiries, please reach out to us at [mathsoc@myuct.ac.za](mailto:mathsoc@myuct.ac.za)
 
 ---
 
