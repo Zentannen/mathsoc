@@ -1,0 +1,27 @@
+---
+title: "Events"
+---
+
+## Upcoming Events
+
+### This Month
+
+| Date | Event | Time | Location |
+|------|-------|------|----------|
+| Feb 10 | Problem Solving Session | 5:00 PM | Math 100 |
+| Feb 17 | Guest Lecture: Prof. Smith | 4:00 PM | Math 202 |
+| Feb 24 | Math Competition Prep | 6:00 PM | Math 100 |
+
+### Past Events
+
+- January 20: New Member Welcome Event
+- January 27: Introduction to Group Theory Workshop
+
+### Subscribe
+
+Want to stay updated? You can subscribe to our events:
+
+- **Add to Your Calendar**: [Download our calendar file](mathsoc-calendar.ics) and import it into Google Calendar, Outlook, Apple Calendar, or any calendar app
+- **Email Updates**: [Join our mailing list](mailto:mathsoc@ubc.ca)
+
+Importing the calendar file will automatically sync all Math Society events to your personal calendar!

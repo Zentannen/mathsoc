@@ -1,0 +1,9 @@
+.nojekyll
+_site/
+.DS_Store
+*.swp
+*.swo
+*~
+
+/.quarto/
+**/*.quarto_ipynb

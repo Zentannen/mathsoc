@@ -1,0 +1,56 @@
+---
+title: "Resources"
+---
+
+## Learning Resources
+
+### Problem Solving Techniques
+
+- **[Polya's Problem Solving Method](polya.qmd)** - A systematic 4-step approach to solving mathematical problems
+- [Original Polya PDF (Queen's University)](https://sass.queensu.ca/sites/sasswww/files/uploaded_files/Resource%20PDFs/polya.pdf)
+
+### Textbooks & References
+
+- **Linear Algebra**: Gilbert Strang's "Introduction to Linear Algebra"
+- **Calculus**: Stewart's "Calculus: Early Transcendentals"
+- **Abstract Algebra**: Dummit and Foote "Abstract Algebra"
+
+### Online Platforms
+
+- [Khan Academy Mathematics](https://www.khanacademy.org/math)
+- [MIT OpenCourseWare](https://ocw.mit.edu/search/?d=Mathematics)
+- [Paul's Online Math Notes](https://tutorial.math.lamar.edu/)
+
+### Competition Resources
+
+- [Canadian Mathematical Olympiad](https://www.cms.math.ca/competitions/)
+- [Putnam Competition](https://maa.org/math-competitions/putnam-competition)
+- [Project Euler](https://projecteuler.net/)
+- **[Integration Bee Resources](integration_bee.qmd)** - Integration competition materials
+  - [Integration Bee Instructions](files/Integration_Bee_instructions_2024.pdf)
+  - [Integration Bee Questions](files/Integration_Bee_questions_2024.pdf)
+  - [Integration Bee Solutions](files/Integration_Bee_qualifier_sols_updated.pdf)
+
+### Study Groups
+
+Join our study groups for:
+- Real Analysis
+- Abstract Algebra
+- Combinatorics
+- Numerical Analysis
+
+<!--
+Governance documents temporarily unpublished: the source files ("MAMSoc
+constitution.pdf", "Maths_Society_WhatsApp_Guidelines.pdf") appear to be from
+UCT's MAM Society, not UBC. Verify/replace them, copy the correct PDFs into
+files/, and restore this section:
+
+## Organization Documents
+
+### Governance & Guidelines
+
+- [Math Society Constitution](files/constitution.pdf)
+- [WhatsApp Code of Conduct](files/whatsapp-guidelines.pdf)
+
+These documents outline our organization's structure, policies, and community standards.
+-->

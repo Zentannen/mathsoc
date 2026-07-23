@@ -1,0 +1,55 @@
+---
+title: "Mathathon"
+---
+
+## Mathathon: A Mathematics Competition
+
+Welcome to the Mathathon – a dynamic team-based mathematics competition inspired by the hackathon format. If you've ever experienced the energy and creativity of a hackathon, imagine channeling that same spirit into solving challenging mathematical problems!
+
+## What is a Mathathon?
+
+The Mathathon is a timed competition where teams of students work together to solve complex mathematical problems across various disciplines. Rather than competing individually, participants collaborate with teammates to tackle problems, discuss strategies, and develop solutions under a time constraint.
+
+## Event Format
+
+**Competition Structure:**
+- Teams of 3-4 members
+- Multiple rounds with increasing difficulty
+- Problems spanning algebra, geometry, number theory, combinatorics, and more
+- Time limits for each round
+- Bonus challenges for teams seeking extra competition
+
+**The Experience:**
+- Collaborative problem-solving environment
+- Real-time scoring and leaderboards
+- Networking opportunities with fellow math enthusiasts
+- Food and beverages provided
+- Prizes for top-performing teams
+
+## Why Participate?
+
+✓ **Sharpen Your Skills** – Apply mathematical knowledge in competitive settings  
+✓ **Teamwork** – Build camaraderie while working toward common goals  
+✓ **Community** – Connect with other mathematics enthusiasts  
+✓ **Recognition** – Showcase your talents and compete for prizes  
+✓ **Fun** – Enjoy the thrill of mathematical competition
+
+## Who Can Participate?
+
+The Mathathon welcomes all students regardless of mathematical background. Whether you're a mathematics major or simply passionate about problem-solving, there's a place for you!
+
+## Upcoming Mathathon
+
+Stay tuned for details about our next Mathathon event! Keep an eye on our [Events](events.qmd) page for announcements regarding:
+- Date and time
+- Registration information
+- Team formation
+- Problem categories and difficulty levels
+
+## Interested?
+
+Want to organize a Mathathon or have suggestions for problems? [Contact us!](mailto:mathsoc@ubc.ca)
+
+---
+
+*The Mathathon combines the creative energy of hackathons with the intellectual challenge of mathematics. It's competition, collaboration, and community all in one!*

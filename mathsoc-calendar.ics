@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Math Society UBC//Math Society Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Math Society UBC Events
+X-WR-TIMEZONE:America/Vancouver
+X-WR-CALDESC:Subscribe to Math Society UBC events
+BEGIN:VEVENT
+UID:problem-solving-20260210@mathsoc.ubc.ca
+DTSTAMP:20260205T000000Z
+DTSTART:20260210T210000Z
+DTEND:20260210T220000Z
+SUMMARY:Problem Solving Session
+DESCRIPTION:Join us for an interactive problem solving session. Work through challenging mathematical problems with fellow enthusiasts.
+LOCATION:Math 100, UBC
+URL:https://mathsoc.ubc.ca/events
+END:VEVENT
+BEGIN:VEVENT
+UID:guest-lecture-20260217@mathsoc.ubc.ca
+DTSTAMP:20260205T000000Z
+DTSTART:20260217T200000Z
+DTEND:20260217T210000Z
+SUMMARY:Guest Lecture: Prof. Smith
+DESCRIPTION:A special guest lecture from Prof. Smith on an exciting mathematics topic.
+LOCATION:Math 202, UBC
+URL:https://mathsoc.ubc.ca/events
+END:VEVENT
+BEGIN:VEVENT
+UID:competition-prep-20260224@mathsoc.ubc.ca
+DTSTAMP:20260205T000000Z
+DTSTART:20260224T220000Z
+DTEND:20260225T000000Z
+SUMMARY:Math Competition Prep
+DESCRIPTION:Prepare for upcoming mathematics competitions. Learn strategies and solve practice problems.
+LOCATION:Math 100, UBC
+URL:https://mathsoc.ubc.ca/events
+END:VEVENT
+END:VCALENDAR

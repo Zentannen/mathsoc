@@ -1,0 +1,29 @@
+---
+title: "About"
+---
+
+## About Math Society
+
+The Math Society is dedicated to fostering a community of mathematics enthusiasts at UBC.
+
+### Our Mission
+
+We aim to:
+- Promote interest in mathematics
+- Provide a supportive community for math students
+- Organize engaging events and activities
+- Connect students with faculty and research opportunities
+
+### Leadership
+
+- **Chair**: Sahana Sivaramakrishnan
+- **Vice Chair**: Carlos Muravu
+- **Treasurer**: Matteo Zaina
+- **Secretary**: Atlas Lardner-Burke
+- **Transformation**: Roaluwa Sarah Vele
+
+### Contact
+
+Email us at [mathsoc@ubc.ca](mailto:mathsoc@ubc.ca).
+
+<!-- TODO: add the correct Instagram link (previous link pointed to UCT's account) -->

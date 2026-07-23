@@ -1,0 +1,73 @@
+---
+title: "Integration Bee"
+---
+
+## Integration Bee: Test Your Calculus Skills
+
+Welcome to the Integration Bee – a fast-paced mathematical competition where students race to solve integration problems! Think of it as a spelling bee, but for calculus enthusiasts.
+
+## What is an Integration Bee?
+
+The Integration Bee is a thrilling competition where participants solve challenging integration problems under time pressure. Competitors take turns approaching the board, and the first to solve the problem correctly advances. It's a celebration of calculus skills, quick thinking, and mathematical problem-solving.
+
+## Competition Format
+
+**How It Works:**
+- Single or team elimination rounds
+- Participants compete in bracket-style matchups
+- Each round features a new integration problem
+- Time limits encourage quick problem-solving
+- Judges verify solutions for correctness
+- Winners advance through the bracket
+
+**Problem Categories:**
+- Indefinite integrals
+- Definite integrals
+- Trigonometric integrals
+- Integration by parts
+- Partial fractions
+- Improper integrals
+- Special techniques and substitutions
+
+## Event Features
+
+🎯 **Competitive Excitement** – Watch talented mathematicians showcase their calculus prowess  
+⏱️ **Real-Time Scoring** – Live bracket updates and immediate feedback  
+🏆 **Prizes** – Rewards for top performers  
+🍕 **Community** – Food, fun, and camaraderie among calculus enthusiasts  
+📊 **Spectator Friendly** – Cheer on competitors and learn new integration techniques  
+
+## Who Should Compete?
+
+The Integration Bee welcomes:
+- Calculus students looking to sharpen their skills
+- Mathematics majors seeking friendly competition
+- Anyone confident in their integration abilities
+- Students wanting to test themselves against peers
+
+**No registration fee** – just bring your pencil and your calculus knowledge!
+
+## Upcoming Integration Bee
+
+Check our [Events](events.qmd) page for announcements about:
+- Date and time of the next Integration Bee
+- Registration details
+- Problem difficulty levels
+- Bracket structure and rules
+
+## Practice Problems
+
+Want to prepare? Here are some sample integration problems to get you started:
+
+- $\int \sin(x) \cos(x) \, dx$
+- $\int \frac{1}{x^2 + 1} \, dx$
+- $\int x e^x \, dx$
+- $\int \frac{x}{x^2 + 4} \, dx$
+
+## Get Involved
+
+Whether you want to compete, volunteer, or suggest problems for future bees, we'd love to hear from you! [Contact us](mailto:mathsoc@ubc.ca)
+
+---
+
+*The Integration Bee celebrates the art and skill of integration – one problem at a time!*

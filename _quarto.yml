@@ -1,0 +1,35 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Math Society"
+  site-url: https://zentannen.github.io/mathsoc/
+  navbar:
+    logo: logo.png
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "About"
+        href: about.qmd
+      - text: "Events"
+        href: events.qmd
+      - text: "Mathathon"
+        href: mathathon.qmd
+      - text: "Integration Bee"
+        href: integration_bee.qmd
+      - text: "Resources"
+        href: resources.qmd
+      - text: "Polya's Method"
+        href: polya.qmd
+    right:
+      - text: "Sponsors"
+        href: sponsors.qmd
+      - text: "GitHub"
+        href: https://github.com/Zentannen/mathsoc
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true

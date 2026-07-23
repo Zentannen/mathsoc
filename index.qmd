@@ -1,0 +1,25 @@
+---
+title: "Math Society"
+---
+
+![Math Society Logo](logo.png){width=150px}
+
+Welcome to the Math Society website! This is your hub for all things mathematics at UBC.
+
+## Quick Links
+
+- 📅 [Upcoming Events](events.qmd)
+- 📚 [Learning Resources](resources.qmd)
+- ℹ️ [About Us](about.qmd)
+
+## Latest News
+
+Stay tuned for announcements about upcoming seminars, workshops, and social events!
+
+## Get Involved
+
+Join us for:
+- Weekly problem-solving sessions
+- Guest lectures from faculty
+- Math competitions
+- Social events
