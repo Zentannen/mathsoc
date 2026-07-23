@@ -1,0 +1,178 @@
+---
+title: "Integration Bee Bag of Tricks"
+---
+
+## The Bag of Tricks
+
+Every integration bee comes down to pattern recognition: the winners aren't integrating faster, they're *recognizing* faster. This page catalogues the tricks that competition integrals are built around. Six heavyweight techniques (Feynman's trick, the King property, polar coordinates, Frullani, Weierstrass, and the $x \mapsto 1/x$ reflection) have full worked problems on the [practice page](integration_practice.qmd) — the ten below complete the toolkit.
+
+::: {.callout-important title="Speed-round meta-strategy"}
+Before you touch pencil to paper:
+
+1. **Check parity first.** Symmetric bounds? Look for an odd integrand — the answer might be $0$ before your opponent finishes reading.
+2. **Guess and differentiate.** For speed rounds it's often faster to guess the form of the antiderivative and differentiate to fix constants than to integrate honestly.
+3. **Reflect before you grind.** On $[0,a]$ with trig or an $x$ out front, try $x \mapsto a-x$ before reaching for heavy machinery.
+4. **Know the standard forms cold.** $\int \sec x$, $\int \frac{dx}{a^2+x^2}$, $\int \ln x$, $\Gamma(n) = (n-1)!$ — these must be instant recall, not derivations.
+:::
+
+### Quick reference
+
+| Trick | Reach for it when… |
+|-------|--------------------|
+| Odd/even symmetry | the bounds are $[-a, a]$ |
+| $\frac{1}{1+e^{x}}$ weight | symmetric bounds with a $1+e^{x}$ (or $1+a^{x}$) downstairs |
+| Reduction formulas | powers: $\sin^{n}$, $\cos^{n}$, $\tan^{n}$, $x^{n}e^{x}$, $\ln^{n}x$ |
+| Inverse functions | the integrand is $f^{-1}$ and you know how to integrate $f$ |
+| Floor / fractional part | $\lfloor x \rfloor$ or $\{x\}$ appears |
+| Product-to-sum | products like $\sin(ax)\cos(bx)$ |
+| Gamma function | $\int_{0}^{\infty} x^{n} e^{-x}\,dx$ shapes |
+| Series expansion | $\ln$, $\arctan$, or $\frac{1}{1-x}$ tangled with powers of $x$ |
+| Reverse product/quotient rule | $e^{x}(f + f')$ or $\frac{g f' - f g'}{g^{2}}$ patterns |
+| $(x \pm \tfrac{1}{x})$ substitution | $x^{4}+1$ (or similar palindromic polynomials) downstairs |
+| [Feynman's trick](integration_practice.qmd) | a parameter-derivative would cancel a hard factor |
+| [King property](integration_practice.qmd) | definite integral that "shouldn't" have a closed form |
+| [Polar coordinates](integration_practice.qmd) | $e^{-x^{2}}$ |
+| [Frullani](integration_practice.qmd) | $\int_{0}^{\infty} \frac{f(ax)-f(bx)}{x}\,dx$ |
+| [Weierstrass](integration_practice.qmd) | rational in $\sin x$, $\cos x$ and nothing slicker works |
+| [$x \mapsto 1/x$](integration_practice.qmd) | integrals over $(0,\infty)$ with reciprocal-friendly factors |
+
+---
+
+### 1. Odd/even symmetry
+
+If $f$ is odd, $\displaystyle\int_{-a}^{a} f(x)\,dx = 0$. If $f$ is even, $\displaystyle\int_{-a}^{a} f(x)\,dx = 2\int_{0}^{a} f(x)\,dx$. Bee setters love burying an odd monster inside an innocent-looking integrand — always split off the odd part before doing any real work.
+
+::: {.callout-tip collapse="true" title="Worked example: the famous 'wifi password' integral"}
+$$\int_{-2}^{2} \left(x^{3}\cos\frac{x}{2} + \frac{1}{2}\right)\sqrt{4-x^{2}} \, dx$$
+
+Split it. The first piece has integrand $x^{3}\cos\frac{x}{2}\sqrt{4-x^{2}}$ — an odd function ($x^{3}$ odd, the rest even) over symmetric bounds, so it contributes **zero**. What survives is
+$$\frac{1}{2}\int_{-2}^{2}\sqrt{4-x^{2}}\,dx,$$
+and $\int_{-2}^{2}\sqrt{4-x^{2}}\,dx$ is just the area of a semicircle of radius $2$, namely $\frac{1}{2}\pi(2)^{2} = 2\pi$. Answer:
+$$\frac{1}{2}\cdot 2\pi = \boxed{\pi}.$$
+No trig substitution required — and yes, this really was a university's wifi password prompt.
+:::
+
+### 2. The 1/(1+eˣ) weight trick
+
+For an **even** function $f$,
+$$\int_{-a}^{a} \frac{f(x)}{1+e^{x}}\,dx = \int_{0}^{a} f(x)\,dx.$$
+The weight $\frac{1}{1+e^{x}}$ looks scary but vanishes entirely. (Works for $1+c^{x}$ with any base $c>0$.)
+
+::: {.callout-tip collapse="true" title="Worked example (with proof of the identity)"}
+$$\int_{-1}^{1} \frac{x^{2}}{1+e^{x}} \, dx$$
+
+Call it $I$ and substitute $x \mapsto -x$:
+$$I = \int_{-1}^{1} \frac{x^{2}}{1+e^{-x}}\,dx = \int_{-1}^{1} \frac{x^{2}\,e^{x}}{1+e^{x}}\,dx.$$
+Add the two versions — the fractions sum to $1$:
+$$2I = \int_{-1}^{1} x^{2}\,\frac{1+e^{x}}{1+e^{x}}\,dx = \int_{-1}^{1} x^{2}\,dx = \frac{2}{3} \quad\Longrightarrow\quad I = \boxed{\frac{1}{3}}.$$
+:::
+
+### 3. Reduction formulas and Wallis' pattern
+
+Integration by parts turns $\int \sin^{n}x\,dx$ into a multiple of $\int \sin^{n-2}x\,dx$. Iterating on $[0, \pi/2]$ gives **Wallis' formulas**:
+$$\int_{0}^{\pi/2} \sin^{n}x \, dx = \frac{n-1}{n}\cdot\frac{n-3}{n-2}\cdots\;\times\;\begin{cases}\dfrac{\pi}{2} & n \text{ even}\\[4pt] 1 & n \text{ odd}\end{cases}$$
+(The same values hold for $\cos^{n}$.) Memorize the pattern — deriving it live costs a full minute.
+
+::: {.callout-tip collapse="true" title="Worked example"}
+$$\int_{0}^{\pi/2} \sin^{6}x \, dx = \frac{5}{6}\cdot\frac{3}{4}\cdot\frac{1}{2}\cdot\frac{\pi}{2} = \boxed{\frac{5\pi}{32}}$$
+
+For odd powers: $\displaystyle\int_{0}^{\pi/2}\sin^{5}x\,dx = \frac{4}{5}\cdot\frac{2}{3}\cdot 1 = \frac{8}{15}$.
+:::
+
+### 4. Integrals of inverse functions
+
+If $f$ is increasing with $f(0)=0$, the regions under $f$ and under $f^{-1}$ tile a rectangle:
+$$\int_{0}^{a} f(x)\,dx + \int_{0}^{f(a)} f^{-1}(y)\,dy = a\,f(a).$$
+So you can integrate $\arcsin$, $\arctan$, $\ln$ — any inverse — by integrating the function you actually like.
+
+::: {.callout-tip collapse="true" title="Worked example"}
+$$\int_{0}^{1} \arcsin x \, dx$$
+
+Apply the identity with $f = \sin$ on $[0, \tfrac{\pi}{2}]$, so $f^{-1} = \arcsin$, $a = \tfrac{\pi}{2}$, $f(a) = 1$:
+$$\int_{0}^{\pi/2} \sin x\,dx + \int_{0}^{1} \arcsin y\,dy = \frac{\pi}{2}\cdot 1.$$
+Since $\int_{0}^{\pi/2}\sin x\,dx = 1$,
+$$\int_{0}^{1}\arcsin x\,dx = \boxed{\frac{\pi}{2} - 1}.$$
+(Check with parts: $x\arcsin x + \sqrt{1-x^{2}}$ evaluated at the bounds gives the same.)
+:::
+
+### 5. Floor and fractional-part integrals
+
+$\lfloor x \rfloor$ is constant between integers and $\{x\} = x - \lfloor x \rfloor$ is periodic — so **split the integral at the integers** and sum. Handy facts: $\int_{0}^{n} \lfloor x \rfloor\,dx = \frac{n(n-1)}{2}$ and $\int_{0}^{n} \{x\}\,dx = \frac{n}{2}$.
+
+::: {.callout-tip collapse="true" title="Worked example"}
+$$\int_{0}^{4} \lfloor x \rfloor \, dx = \underbrace{0}_{[0,1)} + \underbrace{1}_{[1,2)} + \underbrace{2}_{[2,3)} + \underbrace{3}_{[3,4)} = \boxed{6}$$
+
+A step up:
+$$\int_{0}^{3} x\lfloor x \rfloor\,dx = \int_{1}^{2} x\,dx + 2\int_{2}^{3} x\,dx = \frac{3}{2} + 2\cdot\frac{5}{2} = \boxed{\frac{13}{2}}.$$
+:::
+
+### 6. Product-to-sum trig identities
+
+Products of sines and cosines at different frequencies refuse substitution — convert them to sums:
+$$\sin A \cos B = \tfrac{1}{2}\bigl[\sin(A+B) + \sin(A-B)\bigr],$$
+with the analogous identities for $\sin\sin$ and $\cos\cos$. Also keep $\sin^{2}x = \frac{1-\cos 2x}{2}$ and $1 \pm \cos x = 2\cos^{2}\frac{x}{2}$ / $2\sin^{2}\frac{x}{2}$ within arm's reach.
+
+::: {.callout-tip collapse="true" title="Worked example"}
+$$\int \sin(3x)\cos(5x)\,dx = \frac{1}{2}\int \bigl[\sin 8x - \sin 2x\bigr]dx = \boxed{-\frac{\cos 8x}{16} + \frac{\cos 2x}{4} + C}$$
+:::
+
+### 7. The Gamma function
+
+$$\Gamma(s) = \int_{0}^{\infty} x^{s-1} e^{-x}\,dx, \qquad \Gamma(n+1) = n!, \qquad \Gamma\!\left(\tfrac{1}{2}\right) = \sqrt{\pi}.$$
+Any integral of the shape $\int_{0}^{\infty} x^{\text{power}} e^{-x}\,dx$ is a factorial in disguise — answer it on sight. A substitution often massages an integral *into* this shape.
+
+::: {.callout-tip collapse="true" title="Worked examples"}
+$$\int_{0}^{\infty} x^{5} e^{-x}\,dx = \Gamma(6) = 5! = \boxed{120}$$
+
+With the half-integer value:
+$$\int_{0}^{\infty} \sqrt{x}\, e^{-x}\,dx = \Gamma\!\left(\tfrac{3}{2}\right) = \tfrac{1}{2}\Gamma\!\left(\tfrac{1}{2}\right) = \boxed{\frac{\sqrt{\pi}}{2}}$$
+:::
+
+### 8. Series expansion (swap the sum and the integral)
+
+When $\ln(1 \pm x)$, $\arctan x$, or $\frac{1}{1-x}$ is tangled up with powers of $x$, expand into a power series, integrate term by term, and recognize the resulting sum. This is the standard route to answers involving $\pi^{2}$ and $\zeta$ values.
+
+::: {.callout-tip collapse="true" title="Worked example"}
+$$\int_{0}^{1} \frac{\ln(1-x)}{x} \, dx$$
+
+Expand $\ln(1-x) = -\sum_{n\ge 1} \frac{x^{n}}{n}$, so the integrand is $-\sum_{n \ge 1} \frac{x^{n-1}}{n}$. Integrating term by term:
+$$-\sum_{n\ge 1} \frac{1}{n}\int_{0}^{1} x^{n-1}\,dx = -\sum_{n \ge 1}\frac{1}{n^{2}} = \boxed{-\frac{\pi^{2}}{6}}$$
+using Euler's famous $\sum \frac{1}{n^{2}} = \frac{\pi^{2}}{6}$.
+:::
+
+### 9. Reverse product and quotient rules
+
+Train your eye for integrands that are *already* a derivative:
+$$\int e^{x}\bigl(f(x) + f'(x)\bigr)dx = e^{x}f(x) + C, \qquad \int \frac{g(x)f'(x) - f(x)g'(x)}{g(x)^{2}}\,dx = \frac{f(x)}{g(x)} + C.$$
+Bee integrands that look like a mess of terms are often a product or quotient rule read backwards.
+
+::: {.callout-tip collapse="true" title="Worked examples"}
+$$\int e^{x}\left(\frac{1}{x} - \frac{1}{x^{2}}\right)dx = \boxed{\frac{e^{x}}{x} + C}$$
+(here $f(x) = \tfrac{1}{x}$, $f'(x) = -\tfrac{1}{x^{2}}$), and
+$$\int \frac{x\cos x - \sin x}{x^{2}}\,dx = \boxed{\frac{\sin x}{x} + C}$$
+since the integrand is exactly $\dfrac{d}{dx}\left(\dfrac{\sin x}{x}\right)$.
+:::
+
+### 10. The (x ± 1/x) substitution
+
+For palindromic denominators like $x^{4}+1$ or $x^{4}+x^{2}+1$: divide top and bottom by $x^{2}$, then notice
+$$u = x - \frac{1}{x} \Rightarrow du = \left(1 + \frac{1}{x^{2}}\right)dx, \qquad x^{2} + \frac{1}{x^{2}} = u^{2} + 2$$
+(or $u = x + \frac{1}{x}$ with $x^{2} + \frac{1}{x^{2}} = u^{2} - 2$, matching whichever numerator you have).
+
+::: {.callout-tip collapse="true" title="Worked example: the classic qualifier"}
+$$\int \frac{x^{2}+1}{x^{4}+1} \, dx$$
+
+Divide numerator and denominator by $x^{2}$:
+$$\int \frac{1 + \frac{1}{x^{2}}}{x^{2} + \frac{1}{x^{2}}}\,dx.$$
+With $u = x - \frac{1}{x}$, the numerator is exactly $du$ and the denominator is $u^{2}+2$:
+$$\int \frac{du}{u^{2}+2} = \frac{1}{\sqrt{2}}\arctan\frac{u}{\sqrt{2}} + C = \boxed{\frac{1}{\sqrt{2}}\arctan\!\left(\frac{x^{2}-1}{\sqrt{2}\,x}\right) + C}$$
+:::
+
+---
+
+## Keep Going
+
+- Put these to work on the [practice problems by level](integration_practice.qmd) — the Extreme tab has six more heavyweight techniques with full worked solutions.
+- The [UK University Integration Bee Techniques Guide](https://integration.soc.srcf.net/UK_University_Integration_Bee_Techniques_Guide.pdf) is an excellent free booklet covering several of these in depth, with exercises.
+- Past [MIT Integration Bee qualifiers](https://math.mit.edu/~yyao1/integrationbee.html) are the gold-standard problem source.
+- Our own [2024 qualifier](files/Integration_Bee_questions_2024.pdf) and [solutions](files/Integration_Bee_qualifier_sols_updated.pdf).

@@ -201,6 +201,7 @@ $$I = \boxed{\frac{\pi}{4}}$$
 
 ## Want More?
 
+- The **[Bag of Tricks](integration_tricks.qmd)** — ten more competition techniques with worked examples, from parity tricks to the Gamma function
 - Past papers: [2024 qualifier questions](files/Integration_Bee_questions_2024.pdf) and [solutions](files/Integration_Bee_qualifier_sols_updated.pdf)
 - Ready to compete? Details on the [Integration Bee page](integration_bee.qmd)
 - Have a favourite integral we should include? [Send it to us!](mailto:mathsoc@myuct.ac.za)

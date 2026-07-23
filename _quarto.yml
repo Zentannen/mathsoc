@@ -25,6 +25,8 @@ website:
             href: integration_bee.qmd
           - text: "Integration Bee Practice"
             href: integration_practice.qmd
+          - text: "Bag of Tricks"
+            href: integration_tricks.qmd
       - text: "Resources"
         menu:
           - text: "Learning Resources"
