@@ -1,25 +1,60 @@
 ---
-title: "Math Society"
+pagetitle: "UBC Math Society"
+page-layout: full
+toc: false
 ---
 
-![Math Society Logo](logo.png){width=150px}
+::: {.hero}
+[∑]{.hero-symbol .hero-sym-1}[∫]{.hero-symbol .hero-sym-2}[π]{.hero-symbol .hero-sym-3}
 
-Welcome to the Math Society website! This is your hub for all things mathematics at UBC.
+[The University of British Columbia]{.hero-eyebrow}
 
-## Quick Links
+# UBC Math Society
 
-- 📅 [Upcoming Events](events.qmd)
-- 📚 [Learning Resources](resources.qmd)
-- ℹ️ [About Us](about.qmd)
+Problem-solving nights, competitions, guest lectures, and a friendly community for everyone who enjoys mathematics.
 
-## Latest News
+[Upcoming events](events.qmd){.btn .btn-hero-primary .me-2} [Get involved](about.qmd){.btn .btn-hero-outline}
+:::
 
-Stay tuned for announcements about upcoming seminars, workshops, and social events!
+::: {.grid .home-cards}
 
-## Get Involved
+::: {.g-col-12 .g-col-md-4 .home-card}
+[📅]{.card-icon}
 
-Join us for:
-- Weekly problem-solving sessions
-- Guest lectures from faculty
-- Math competitions
-- Social events
+### Events
+
+Weekly problem-solving sessions, guest lectures from faculty, and socials throughout the term.
+
+[Browse events →](events.qmd)
+:::
+
+::: {.g-col-12 .g-col-md-4 .home-card}
+[🏆]{.card-icon}
+
+### Competitions
+
+The team-based **Mathathon** and the bracket-style **Integration Bee** — open to all skill levels.
+
+[Mathathon →](mathathon.qmd)<br>
+[Integration Bee →](integration_bee.qmd)
+:::
+
+::: {.g-col-12 .g-col-md-4 .home-card}
+[📚]{.card-icon}
+
+### Resources
+
+Textbook picks, online courses, competition archives, and Polya's problem-solving method.
+
+[Explore resources →](resources.qmd)
+:::
+
+:::
+
+::: {.home-cta}
+## Get involved
+
+No membership forms, no prerequisites — just show up to any event. Want a nudge when something's happening?
+
+[✉️ Email us](mailto:mathsoc@ubc.ca){.btn .btn-primary .me-2} [📅 Subscribe to the calendar](mathsoc-calendar.ics){.btn .btn-outline-primary}
+:::

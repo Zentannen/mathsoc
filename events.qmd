@@ -19,9 +19,8 @@ title: "Events"
 
 ### Subscribe
 
-Want to stay updated? You can subscribe to our events:
+Never miss an event:
 
-- **Add to Your Calendar**: [Download our calendar file](mathsoc-calendar.ics) and import it into Google Calendar, Outlook, Apple Calendar, or any calendar app
-- **Email Updates**: [Join our mailing list](mailto:mathsoc@ubc.ca)
+[📅 Add our calendar (.ics)](mathsoc-calendar.ics){.btn .btn-primary .me-2} [✉️ Join the mailing list](mailto:mathsoc@ubc.ca){.btn .btn-outline-primary}
 
-Importing the calendar file will automatically sync all Math Society events to your personal calendar!
+The calendar file imports into Google Calendar, Outlook, Apple Calendar, or any calendar app and keeps Math Society events synced automatically.

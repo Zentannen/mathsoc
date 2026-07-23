@@ -3,10 +3,13 @@ project:
   output-dir: _site
 
 website:
-  title: "Math Society"
+  title: "UBC Math Society"
+  favicon: logo.svg
   site-url: https://zentannen.github.io/mathsoc/
   navbar:
-    logo: logo.png
+    logo: logo.svg
+    logo-alt: "UBC Math Society"
+    background: "#002145"
     left:
       - text: "Home"
         href: index.qmd
@@ -14,22 +17,43 @@ website:
         href: about.qmd
       - text: "Events"
         href: events.qmd
-      - text: "Mathathon"
-        href: mathathon.qmd
-      - text: "Integration Bee"
-        href: integration_bee.qmd
+      - text: "Competitions"
+        menu:
+          - text: "Mathathon"
+            href: mathathon.qmd
+          - text: "Integration Bee"
+            href: integration_bee.qmd
       - text: "Resources"
-        href: resources.qmd
-      - text: "Polya's Method"
-        href: polya.qmd
-    right:
+        menu:
+          - text: "Learning Resources"
+            href: resources.qmd
+          - text: "Polya's Problem-Solving Method"
+            href: polya.qmd
       - text: "Sponsors"
         href: sponsors.qmd
-      - text: "GitHub"
+    right:
+      - icon: github
         href: https://github.com/Zentannen/mathsoc
+        aria-label: GitHub
+  page-footer:
+    background: "#002145"
+    left: "© 2026 UBC Math Society"
+    center:
+      - text: "Events"
+        href: events.qmd
+      - text: "Resources"
+        href: resources.qmd
+      - text: "Sponsors"
+        href: sponsors.qmd
+    right:
+      - icon: envelope
+        href: mailto:mathsoc@ubc.ca
+        aria-label: Email
+      - icon: github
+        href: https://github.com/Zentannen/mathsoc
+        aria-label: GitHub
 
 format:
   html:
-    theme: cosmo
-    css: styles.css
+    theme: [cosmo, theme.scss]
     toc: true

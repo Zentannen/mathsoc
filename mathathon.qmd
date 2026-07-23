@@ -13,6 +13,7 @@ The Mathathon is a timed competition where teams of students work together to so
 ## Event Format
 
 **Competition Structure:**
+
 - Teams of 3-4 members
 - Multiple rounds with increasing difficulty
 - Problems spanning algebra, geometry, number theory, combinatorics, and more
@@ -20,6 +21,7 @@ The Mathathon is a timed competition where teams of students work together to so
 - Bonus challenges for teams seeking extra competition
 
 **The Experience:**
+
 - Collaborative problem-solving environment
 - Real-time scoring and leaderboards
 - Networking opportunities with fellow math enthusiasts
@@ -41,6 +43,7 @@ The Mathathon welcomes all students regardless of mathematical background. Wheth
 ## Upcoming Mathathon
 
 Stay tuned for details about our next Mathathon event! Keep an eye on our [Events](events.qmd) page for announcements regarding:
+
 - Date and time
 - Registration information
 - Team formation

@@ -13,6 +13,7 @@ The Integration Bee is a thrilling competition where participants solve challeng
 ## Competition Format
 
 **How It Works:**
+
 - Single or team elimination rounds
 - Participants compete in bracket-style matchups
 - Each round features a new integration problem
@@ -21,6 +22,7 @@ The Integration Bee is a thrilling competition where participants solve challeng
 - Winners advance through the bracket
 
 **Problem Categories:**
+
 - Indefinite integrals
 - Definite integrals
 - Trigonometric integrals
@@ -40,6 +42,7 @@ The Integration Bee is a thrilling competition where participants solve challeng
 ## Who Should Compete?
 
 The Integration Bee welcomes:
+
 - Calculus students looking to sharpen their skills
 - Mathematics majors seeking friendly competition
 - Anyone confident in their integration abilities
@@ -50,6 +53,7 @@ The Integration Bee welcomes:
 ## Upcoming Integration Bee
 
 Check our [Events](events.qmd) page for announcements about:
+
 - Date and time of the next Integration Bee
 - Registration details
 - Problem difficulty levels
@@ -59,10 +63,12 @@ Check our [Events](events.qmd) page for announcements about:
 
 Want to prepare? Here are some sample integration problems to get you started:
 
+::: {.practice-box}
 - $\int \sin(x) \cos(x) \, dx$
 - $\int \frac{1}{x^2 + 1} \, dx$
 - $\int x e^x \, dx$
 - $\int \frac{x}{x^2 + 4} \, dx$
+:::
 
 ## Get Involved
 

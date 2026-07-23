@@ -1,0 +1,261 @@
+/*-- scss:defaults --*/
+
+// Palette (UBC brand blues)
+$navy: #002145;
+$blue: #0055b7;
+$sky:  #3fa7e0;
+$mist: #f4f8fc;
+$ink:  #1f2a3a;
+
+$primary: $blue;
+$body-color: $ink;
+$link-color: $blue;
+$headings-color: $navy;
+
+$font-family-sans-serif: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  Roboto, "Helvetica Neue", Arial, sans-serif;
+$headings-font-family: "Space Grotesk", "Inter", sans-serif;
+$headings-font-weight: 600;
+$web-font-path: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap";
+
+$btn-border-radius: 999px;
+$btn-border-radius-sm: 999px;
+$btn-border-radius-lg: 999px;
+
+$navbar-bg: $navy;
+$navbar-fg: rgba(255, 255, 255, 0.8);
+$navbar-hl: #ffffff;
+
+/*-- scss:rules --*/
+
+// ---------- Global ----------
+
+body {
+  line-height: 1.65;
+}
+
+// Cosmo squares off corners; restore pill buttons
+.btn {
+  border-radius: 999px;
+}
+
+h1 {
+  letter-spacing: -0.01em;
+}
+
+h2 {
+  margin-top: 2.2rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid #e3ebf4;
+}
+
+h3 {
+  margin-top: 1.6rem;
+  color: $blue;
+}
+
+// ---------- Navbar ----------
+
+.navbar {
+  padding-top: 0.55rem;
+  padding-bottom: 0.55rem;
+
+  .navbar-brand {
+    font-family: $headings-font-family;
+    font-weight: 700;
+  }
+
+  .navbar-brand img,
+  img.navbar-logo {
+    height: 30px;
+    width: 30px;
+    max-height: 30px;
+    border-radius: 7px;
+  }
+}
+
+// ---------- Tables ----------
+
+.table thead th {
+  background: $mist;
+  color: $navy;
+  border-bottom: 2px solid $blue;
+}
+
+.table tbody tr:hover {
+  background-color: rgba(63, 167, 224, 0.08);
+}
+
+// ---------- Footer ----------
+
+.nav-footer {
+  padding: 1.4rem 0;
+  color: rgba(255, 255, 255, 0.7);
+
+  a {
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+
+    &:hover {
+      color: #ffffff;
+    }
+  }
+}
+
+// ---------- Home: hero ----------
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1.25rem;
+  padding: 4rem 2rem 4.25rem;
+  margin: 0.5rem 0 2.75rem;
+  text-align: center;
+  color: #ffffff;
+  background:
+    radial-gradient(1200px 500px at 85% -10%, rgba(63, 167, 224, 0.35), transparent 60%),
+    linear-gradient(135deg, #001a38 0%, $navy 45%, $blue 130%);
+
+  h1 {
+    color: #ffffff;
+    font-size: clamp(2.1rem, 5vw, 3rem);
+    margin-bottom: 0.75rem;
+    letter-spacing: -0.02em;
+  }
+
+  p {
+    font-size: 1.12rem;
+    color: rgba(255, 255, 255, 0.87);
+    max-width: 44rem;
+    margin: 0 auto 1.6rem;
+  }
+}
+
+.hero-eyebrow {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: $sky;
+  margin-bottom: 0.75rem;
+}
+
+.hero-symbol {
+  position: absolute;
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.07);
+  user-select: none;
+  pointer-events: none;
+}
+
+.hero-sym-1 { font-size: 11rem; top: -1.5rem; left: 3%; }
+.hero-sym-2 { font-size: 9rem; bottom: -2.25rem; right: 5%; }
+.hero-sym-3 { font-size: 6rem; top: 12%; right: 18%; color: rgba(255, 255, 255, 0.05); }
+
+.hero .btn {
+  padding: 0.6rem 1.5rem;
+  font-weight: 600;
+}
+
+.btn-hero-primary {
+  background: #ffffff;
+  border: 1.5px solid #ffffff;
+  color: $navy;
+
+  &:hover {
+    background: #cfe8f8;
+    border-color: #cfe8f8;
+    color: $navy;
+  }
+}
+
+.btn-hero-outline {
+  border: 1.5px solid rgba(255, 255, 255, 0.65);
+  color: #ffffff;
+  background: transparent;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: #ffffff;
+    color: #ffffff;
+  }
+}
+
+// ---------- Home: cards ----------
+
+.home-card {
+  height: 100%;
+  background: #ffffff;
+  border: 1px solid #e4ecf5;
+  border-radius: 1rem;
+  padding: 1.6rem 1.5rem 1.4rem;
+  box-shadow: 0 1px 2px rgba(0, 33, 69, 0.05);
+  transition: transform 0.16s ease, box-shadow 0.16s ease, border-color 0.16s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0, 33, 69, 0.12);
+    border-color: #cfe0f0;
+  }
+
+  h3 {
+    margin-top: 0;
+    color: $navy;
+    font-size: 1.15rem;
+  }
+
+  p {
+    color: #43536a;
+    font-size: 0.95rem;
+  }
+
+  a {
+    font-weight: 600;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.card-icon {
+  display: block;
+  font-size: 1.9rem;
+  margin-bottom: 0.6rem;
+}
+
+// ---------- Home: call to action ----------
+
+.home-cta {
+  text-align: center;
+  margin: 3rem auto 1.5rem;
+  max-width: 46rem;
+  background: $mist;
+  border-radius: 1.25rem;
+  padding: 2.25rem 1.5rem;
+
+  h2 {
+    border-bottom: none;
+    margin-top: 0;
+  }
+
+  p {
+    max-width: 34rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+// ---------- Content boxes ----------
+
+.practice-box {
+  background: $mist;
+  border: 1px solid #dbe7f3;
+  border-radius: 0.9rem;
+  padding: 1.25rem 1.5rem;
+  margin: 1rem 0;
+}
