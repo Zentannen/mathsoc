@@ -1,0 +1,206 @@
+---
+title: "Integration Bee Practice"
+---
+
+## Practice Problems by Level
+
+Training for the Integration Bee? Work through the levels below. Try each problem honestly before opening the answer key — the struggle is where the learning happens. The **Extreme** level introduces the named techniques that win bees: each problem comes with an explanation of the method and a full worked solution.
+
+::: {.panel-tabset}
+
+## 🟢 Warm-up
+
+Fundamentals: basic antiderivatives and single substitutions.
+
+1. $\displaystyle\int x^{3} \, dx$
+2. $\displaystyle\int (2x+1)^{5} \, dx$
+3. $\displaystyle\int \cos(3x) \, dx$
+4. $\displaystyle\int x e^{x^{2}} \, dx$
+5. $\displaystyle\int \frac{1}{x \ln x} \, dx$
+6. $\displaystyle\int_{0}^{1} \frac{x}{x^{2}+1} \, dx$
+
+::: {.callout-tip collapse="true" title="Answer key"}
+1. $\dfrac{x^{4}}{4} + C$
+2. $\dfrac{(2x+1)^{6}}{12} + C$
+3. $\dfrac{\sin(3x)}{3} + C$
+4. $\dfrac{e^{x^{2}}}{2} + C$
+5. $\ln\lvert\ln x\rvert + C$
+6. $\dfrac{1}{2}\ln 2$
+:::
+
+## 🔵 Intermediate
+
+Integration by parts, trig powers, and partial fractions.
+
+1. $\displaystyle\int x^{2} \ln x \, dx$
+2. $\displaystyle\int e^{x} \sin x \, dx$
+3. $\displaystyle\int \sin^{3}x \cos^{2}x \, dx$
+4. $\displaystyle\int \frac{3x+5}{x^{2}+x-2} \, dx$
+5. $\displaystyle\int \arctan x \, dx$
+6. $\displaystyle\int_{0}^{\pi/2} \sin^{2}x \, dx$
+
+::: {.callout-tip collapse="true" title="Answer key"}
+1. $\dfrac{x^{3}}{3}\ln x - \dfrac{x^{3}}{9} + C$
+2. $\dfrac{e^{x}(\sin x - \cos x)}{2} + C$ — apply parts twice, then solve for the integral
+3. $\dfrac{\cos^{5}x}{5} - \dfrac{\cos^{3}x}{3} + C$ — save one $\sin x$, convert the rest to cosines
+4. $\dfrac{1}{3}\ln\lvert x+2\rvert + \dfrac{8}{3}\ln\lvert x-1\rvert + C$
+5. $x\arctan x - \dfrac{1}{2}\ln(1+x^{2}) + C$ — parts with $u = \arctan x$
+6. $\dfrac{\pi}{4}$ — power-reduction: $\sin^{2}x = \tfrac{1-\cos 2x}{2}$
+:::
+
+## 🟠 Advanced
+
+Trickier substitutions, improper integrals, and a first taste of symmetry.
+
+1. $\displaystyle\int \sec^{3}x \, dx$
+2. $\displaystyle\int \frac{dx}{1+\sqrt{x}}$
+3. $\displaystyle\int_{0}^{\pi} \frac{x \sin x}{1+\cos^{2}x} \, dx$
+4. $\displaystyle\int \frac{dx}{x^{2}\sqrt{x^{2}+4}}$
+5. $\displaystyle\int_{0}^{1} \ln x \, dx$
+6. $\displaystyle\int \frac{x^{2}}{1+x^{6}} \, dx$
+
+::: {.callout-note collapse="true" title="Hints"}
+1. Parts with $u = \sec x$, $dv = \sec^{2}x \, dx$ — the integral reappears; solve for it.
+2. Substitute $u = \sqrt{x}$ and do polynomial division.
+3. Substitute $x \mapsto \pi - x$ and watch what happens to the $x$ in front. (This is the "King property" — fully explained in the Extreme tab.)
+4. Trig substitution $x = 2\tan\theta$ — or differentiate $\dfrac{\sqrt{x^{2}+4}}{x}$ and be pleasantly surprised.
+5. It's improper at $0$: integrate by parts, then take the limit.
+6. $u = x^{3}$ turns it into an old friend.
+:::
+
+::: {.callout-tip collapse="true" title="Answer key"}
+1. $\dfrac{1}{2}\left(\sec x \tan x + \ln\lvert\sec x + \tan x\rvert\right) + C$
+2. $2\sqrt{x} - 2\ln(1+\sqrt{x}) + C$
+3. $\dfrac{\pi^{2}}{4}$
+4. $-\dfrac{\sqrt{x^{2}+4}}{4x} + C$
+5. $-1$
+6. $\dfrac{1}{3}\arctan(x^{3}) + C$
+:::
+
+## 🔴 Extreme
+
+Bee-final material. Each problem introduces a named technique, with the method explained and a full worked solution.
+
+---
+
+#### 1. The Feynman classic
+
+$$\int_{0}^{1} \frac{x-1}{\ln x} \, dx$$
+
+::: {.callout-note title="Technique: differentiation under the integral sign (Feynman's trick)"}
+Embed the integral in a **family** $I(a)$ by inserting a parameter, differentiate with respect to that parameter (the $x$-integral often becomes elementary), then integrate back and evaluate at the value you need. Use it when an integrand contains a "hard" factor — like $\ln x$ in a denominator — that a parameter-derivative would cancel.
+:::
+
+::: {.callout-tip collapse="true" title="Worked solution"}
+Define
+$$I(a) = \int_{0}^{1} \frac{x^{a}-1}{\ln x} \, dx, \qquad a \ge 0.$$
+Since $\dfrac{\partial}{\partial a} x^{a} = x^{a}\ln x$, the awkward $\ln x$ cancels:
+$$I'(a) = \int_{0}^{1} x^{a} \, dx = \frac{1}{a+1}.$$
+Also $I(0) = 0$, so integrating back gives $I(a) = \ln(a+1)$. Our integral is
+$$I(1) = \boxed{\ln 2}.$$
+:::
+
+---
+
+#### 2. The King property
+
+$$\int_{0}^{\pi/2} \ln(\sin x) \, dx$$
+
+::: {.callout-note title="Technique: exploit symmetry with x ↦ a + b − x"}
+On $[a,b]$, the substitution $x \mapsto a+b-x$ leaves the integral's value unchanged. Adding the original and reflected versions often collapses the integrand — the "$x$" factors cancel or trig functions pair up ($\sin \leftrightarrow \cos$). Bees love this because it turns impossible-looking definite integrals into elementary ones.
+:::
+
+::: {.callout-tip collapse="true" title="Worked solution"}
+Let $I = \displaystyle\int_{0}^{\pi/2} \ln(\sin x)\,dx$. Reflecting with $x \mapsto \tfrac{\pi}{2}-x$ gives $I = \displaystyle\int_{0}^{\pi/2} \ln(\cos x)\,dx$. Add them:
+$$2I = \int_{0}^{\pi/2} \ln(\sin x \cos x)\,dx = \int_{0}^{\pi/2} \ln\!\left(\frac{\sin 2x}{2}\right)dx = \int_{0}^{\pi/2} \ln(\sin 2x)\,dx - \frac{\pi}{2}\ln 2.$$
+For the remaining integral, substitute $u = 2x$:
+$$\int_{0}^{\pi/2} \ln(\sin 2x)\,dx = \frac{1}{2}\int_{0}^{\pi} \ln(\sin u)\,du = \int_{0}^{\pi/2} \ln(\sin u)\,du = I,$$
+using the symmetry of $\sin$ about $\pi/2$. So $2I = I - \frac{\pi}{2}\ln 2$, giving
+$$I = \boxed{-\frac{\pi}{2}\ln 2}.$$
+:::
+
+---
+
+#### 3. The Gaussian integral
+
+$$\int_{0}^{\infty} e^{-x^{2}} \, dx$$
+
+::: {.callout-note title="Technique: square the integral and switch to polar coordinates"}
+$e^{-x^{2}}$ has no elementary antiderivative — so don't look for one. Multiply the integral by a copy of itself in a second variable to get a double integral over the plane, where $x^{2}+y^{2} = r^{2}$ makes polar coordinates natural and the Jacobian factor $r$ hands you an easy substitution.
+:::
+
+::: {.callout-tip collapse="true" title="Worked solution"}
+Let $I = \displaystyle\int_{0}^{\infty} e^{-x^{2}}dx$. Then
+$$I^{2} = \int_{0}^{\infty}\!\!\int_{0}^{\infty} e^{-(x^{2}+y^{2})}\,dx\,dy.$$
+In polar coordinates the first quadrant is $0 \le \theta \le \tfrac{\pi}{2}$, $r \ge 0$, and $dx\,dy = r\,dr\,d\theta$:
+$$I^{2} = \int_{0}^{\pi/2}\!\!\int_{0}^{\infty} e^{-r^{2}} r\,dr\,d\theta = \frac{\pi}{2}\cdot\left[-\frac{e^{-r^{2}}}{2}\right]_{0}^{\infty} = \frac{\pi}{2}\cdot\frac{1}{2} = \frac{\pi}{4}.$$
+Hence
+$$I = \boxed{\frac{\sqrt{\pi}}{2}}.$$
+:::
+
+---
+
+#### 4. A Frullani integral
+
+$$\int_{0}^{\infty} \frac{e^{-x} - e^{-3x}}{x} \, dx$$
+
+::: {.callout-note title="Technique: Frullani's theorem / writing the integrand as an inner integral"}
+For nice $f$ with limits at $0$ and $\infty$,
+$$\int_{0}^{\infty} \frac{f(ax)-f(bx)}{x}\,dx = \bigl(f(0)-f(\infty)\bigr)\ln\frac{b}{a}.$$
+The slick proof: recognize the difference quotient as an integral in a *second* variable, then swap the order of integration (Tonelli). Spotting a hidden double integral is one of the most versatile tricks in the book.
+:::
+
+::: {.callout-tip collapse="true" title="Worked solution"}
+The key identity:
+$$\frac{e^{-x}-e^{-3x}}{x} = \int_{1}^{3} e^{-xt} \, dt.$$
+Swap the order of integration:
+$$\int_{0}^{\infty}\!\!\int_{1}^{3} e^{-xt}\,dt\,dx = \int_{1}^{3}\!\!\int_{0}^{\infty} e^{-xt}\,dx\,dt = \int_{1}^{3} \frac{dt}{t} = \boxed{\ln 3}.$$
+This matches Frullani's formula with $f(x) = e^{-x}$: $(1-0)\ln\tfrac{3}{1} = \ln 3$.
+:::
+
+---
+
+#### 5. The Weierstrass substitution
+
+$$\int_{0}^{\pi} \frac{dx}{2+\cos x}$$
+
+::: {.callout-note title="Technique: the universal substitution t = tan(x/2)"}
+The substitution $t = \tan\frac{x}{2}$ converts **any** rational function of $\sin x$ and $\cos x$ into an ordinary rational function of $t$:
+$$\sin x = \frac{2t}{1+t^{2}}, \qquad \cos x = \frac{1-t^{2}}{1+t^{2}}, \qquad dx = \frac{2\,dt}{1+t^{2}}.$$
+It's the sledgehammer for trig-rational integrands when no slicker identity presents itself.
+:::
+
+::: {.callout-tip collapse="true" title="Worked solution"}
+With $t = \tan\frac{x}{2}$, the bounds $x: 0 \to \pi$ become $t: 0 \to \infty$, and
+$$2 + \cos x = 2 + \frac{1-t^{2}}{1+t^{2}} = \frac{3+t^{2}}{1+t^{2}}.$$
+So the integral becomes
+$$\int_{0}^{\infty} \frac{1+t^{2}}{3+t^{2}} \cdot \frac{2\,dt}{1+t^{2}} = \int_{0}^{\infty} \frac{2\,dt}{3+t^{2}} = \frac{2}{\sqrt{3}}\left[\arctan\frac{t}{\sqrt{3}}\right]_{0}^{\infty} = \frac{2}{\sqrt{3}}\cdot\frac{\pi}{2} = \boxed{\frac{\pi}{\sqrt{3}}}.$$
+:::
+
+---
+
+#### 6. The x ↦ 1/x trick
+
+$$\int_{0}^{\infty} \frac{dx}{(1+x^{2})(1+x^{\pi})}$$
+
+::: {.callout-note title="Technique: reflect the half-line with x = 1/u"}
+On $(0,\infty)$, the substitution $x = 1/u$ maps the interval to itself. If the rest of the integrand transforms nicely (as $\frac{1}{1+x^{2}}$ does), adding the original and transformed integrals can make an ugly factor vanish entirely. The $\pi$ in the exponent is a red herring — the answer doesn't depend on it.
+:::
+
+::: {.callout-tip collapse="true" title="Worked solution"}
+Let $I$ be the integral, and substitute $x = 1/u$, $dx = -du/u^{2}$ (bounds flip):
+$$I = \int_{0}^{\infty} \frac{1}{\left(1+\frac{1}{u^{2}}\right)\left(1+u^{-\pi}\right)} \frac{du}{u^{2}} = \int_{0}^{\infty} \frac{u^{\pi}}{(1+u^{2})(1+u^{\pi})} \, du.$$
+Add this to the original:
+$$2I = \int_{0}^{\infty} \frac{1+u^{\pi}}{(1+u^{2})(1+u^{\pi})}\,du = \int_{0}^{\infty} \frac{du}{1+u^{2}} = \frac{\pi}{2}.$$
+So
+$$I = \boxed{\frac{\pi}{4}}$$
+— for *any* exponent in place of $\pi$. Try it with $x^{e}$, $x^{100}$, or $x^{\sqrt{2}}$: same answer.
+:::
+
+:::
+
+## Want More?
+
+- Past papers: [2024 qualifier questions](files/Integration_Bee_questions_2024.pdf) and [solutions](files/Integration_Bee_qualifier_sols_updated.pdf)
+- Ready to compete? Details on the [Integration Bee page](integration_bee.qmd)
+- Have a favourite integral we should include? [Send it to us!](mailto:mathsoc@myuct.ac.za)

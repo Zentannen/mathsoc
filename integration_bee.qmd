@@ -70,6 +70,10 @@ Want to prepare? Here are some sample integration problems to get you started:
 - $\int \frac{x}{x^2 + 4} \, dx$
 :::
 
+Ready for more? We have a full practice set with four difficulty levels — from warm-ups to bee-final "extreme" problems, each extreme problem explained with the technique that cracks it (Feynman's trick, the King property, Weierstrass substitution, and more).
+
+[Practice problems by level →](integration_practice.qmd){.btn .btn-primary}
+
 ## Get Involved
 
 Whether you want to compete, volunteer, or suggest problems for future bees, we'd love to hear from you! [Contact us](mailto:mathsoc@myuct.ac.za)

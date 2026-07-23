@@ -310,6 +310,41 @@ h3 {
   }
 }
 
+// ---------- Tabsets (practice levels) ----------
+
+.panel-tabset {
+  .nav-tabs {
+    border-bottom: none;
+    gap: 0.4rem;
+    margin-bottom: 1.25rem;
+
+    .nav-link {
+      border: 1px solid #e4ecf5;
+      border-radius: 999px;
+      padding: 0.45rem 1.1rem;
+      font-weight: 600;
+      color: $ink;
+
+      &:hover {
+        background: $mist;
+        border-color: #cfe0f0;
+      }
+
+      &.active {
+        background: $navy;
+        color: #ffffff;
+        border-color: $navy;
+      }
+    }
+  }
+}
+
+// ---------- Callouts ----------
+
+.callout {
+  border-radius: 0.75rem;
+}
+
 // ---------- Content boxes ----------
 
 .practice-box {

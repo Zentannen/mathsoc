@@ -27,6 +27,7 @@ title: "Resources"
 - [Putnam Competition](https://maa.org/math-competitions/putnam-competition)
 - [Project Euler](https://projecteuler.net/)
 - **[Integration Bee Resources](integration_bee.qmd)** - Integration competition materials
+  - [Practice Problems by Level](integration_practice.qmd) - warm-up to extreme, with techniques explained
   - [Integration Bee Instructions](files/Integration_Bee_instructions_2024.pdf)
   - [Integration Bee Questions](files/Integration_Bee_questions_2024.pdf)
   - [Integration Bee Solutions](files/Integration_Bee_qualifier_sols_updated.pdf)
