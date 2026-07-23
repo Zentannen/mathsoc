@@ -74,6 +74,58 @@ h3 {
   }
 }
 
+// ---------- Navbar dropdowns ----------
+
+.navbar .dropdown-menu {
+  border: 1px solid #e4ecf5;
+  border-radius: 0.75rem;
+  padding: 0.5rem;
+  min-width: 230px;
+  box-shadow: 0 14px 32px rgba(0, 33, 69, 0.18);
+
+  .dropdown-item {
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.85rem;
+    font-weight: 500;
+    color: $ink;
+
+    &:hover,
+    &:focus {
+      background: $mist;
+      color: $blue;
+    }
+  }
+}
+
+// Open on hover (desktop only; mobile keeps tap-to-open)
+@media (min-width: 992px) {
+  .navbar .nav-item.dropdown {
+    .dropdown-menu {
+      display: block;
+      visibility: hidden;
+      opacity: 0;
+      margin-top: 0;
+      transform: translateY(10px);
+      transition: opacity 0.18s ease, transform 0.18s ease, visibility 0.18s;
+    }
+
+    &:hover > .dropdown-menu,
+    .dropdown-menu.show {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .dropdown-toggle::after {
+      transition: transform 0.18s ease;
+    }
+
+    &:hover .dropdown-toggle::after {
+      transform: rotate(180deg);
+    }
+  }
+}
+
 // ---------- Tables ----------
 
 .table thead th {
