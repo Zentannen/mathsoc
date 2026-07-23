@@ -4,7 +4,7 @@ title: "Integration Bee Bag of Tricks"
 
 ## The Bag of Tricks
 
-Every integration bee comes down to pattern recognition: the winners aren't integrating faster, they're *recognizing* faster. This page catalogues the tricks that competition integrals are built around. Six heavyweight techniques (Feynman's trick, the King property, polar coordinates, Frullani, Weierstrass, and the $x \mapsto 1/x$ reflection) have full worked problems on the [practice page](integration_practice.qmd) — the ten below complete the toolkit.
+Every integration bee comes down to pattern recognition: the winners aren't integrating faster, they're *recognizing* faster. This page catalogues the tricks that competition integrals are built around. Six heavyweight techniques (Feynman's trick, the King property, polar coordinates, Frullani, Weierstrass, and the $x \mapsto 1/x$ reflection) have full worked problems on the [practice page](integration_practice.qmd) — the eleven below complete the toolkit.
 
 ::: {.callout-important title="Speed-round meta-strategy"}
 Before you touch pencil to paper:
@@ -28,6 +28,7 @@ Before you touch pencil to paper:
 | Gamma function | $\int_{0}^{\infty} x^{n} e^{-x}\,dx$ shapes |
 | Series expansion | $\ln$, $\arctan$, or $\frac{1}{1-x}$ tangled with powers of $x$ |
 | Reverse product/quotient rule | $e^{x}(f + f')$ or $\frac{g f' - f g'}{g^{2}}$ patterns |
+| Heaviside cover-up | partial fractions with distinct linear factors |
 | $(x \pm \tfrac{1}{x})$ substitution | $x^{4}+1$ (or similar palindromic polynomials) downstairs |
 | [Feynman's trick](integration_practice.qmd) | a parameter-derivative would cancel a hard factor |
 | [King property](integration_practice.qmd) | definite integral that "shouldn't" have a closed form |
@@ -166,6 +167,25 @@ Divide numerator and denominator by $x^{2}$:
 $$\int \frac{1 + \frac{1}{x^{2}}}{x^{2} + \frac{1}{x^{2}}}\,dx.$$
 With $u = x - \frac{1}{x}$, the numerator is exactly $du$ and the denominator is $u^{2}+2$:
 $$\int \frac{du}{u^{2}+2} = \frac{1}{\sqrt{2}}\arctan\frac{u}{\sqrt{2}} + C = \boxed{\frac{1}{\sqrt{2}}\arctan\!\left(\frac{x^{2}-1}{\sqrt{2}\,x}\right) + C}$$
+:::
+
+### 11. The Heaviside cover-up method
+
+Partial fractions without the pain. For distinct linear factors, the coefficient over $(x-r)$ is found by **covering up** $(x-r)$ in the original fraction and evaluating what's left at $x = r$:
+$$\frac{P(x)}{(x-r)\,Q(x)} = \frac{A}{x-r} + \cdots \quad\Longrightarrow\quad A = \frac{P(r)}{Q(r)}.$$
+No long division, no simultaneous equations — each coefficient takes seconds. (For a repeated factor $(x-r)^{k}$, cover-up gives only the coefficient of the *highest* power $\frac{1}{(x-r)^{k}}$; get the rest by plugging in convenient values.)
+
+::: {.callout-tip collapse="true" title="Worked example"}
+$$\int \frac{x^{2}+1}{x(x-1)(x+2)} \, dx$$
+
+Write $\dfrac{x^{2}+1}{x(x-1)(x+2)} = \dfrac{A}{x} + \dfrac{B}{x-1} + \dfrac{C}{x+2}$ and cover up:
+
+- $A$: cover $x$, evaluate at $x=0$: $\quad A = \dfrac{0+1}{(0-1)(0+2)} = -\dfrac{1}{2}$
+- $B$: cover $(x-1)$, evaluate at $x=1$: $\quad B = \dfrac{1+1}{(1)(1+2)} = \dfrac{2}{3}$
+- $C$: cover $(x+2)$, evaluate at $x=-2$: $\quad C = \dfrac{4+1}{(-2)(-2-1)} = \dfrac{5}{6}$
+
+Sanity check: $A + B + C = -\tfrac{1}{2} + \tfrac{2}{3} + \tfrac{5}{6} = 1$, matching the $x^{2}$ coefficient upstairs — a free error-catch the cover-up method hands you. So
+$$\int \frac{x^{2}+1}{x(x-1)(x+2)}\,dx = \boxed{-\frac{1}{2}\ln\lvert x\rvert + \frac{2}{3}\ln\lvert x-1\rvert + \frac{5}{6}\ln\lvert x+2\rvert + C}$$
 :::
 
 ---
