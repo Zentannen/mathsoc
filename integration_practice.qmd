@@ -4,7 +4,7 @@ title: "Integration Bee Practice"
 
 ## Practice Problems by Level
 
-Training for the Integration Bee? Work through the levels below. Try each problem honestly before opening the answer key — the struggle is where the learning happens. The **Extreme** level introduces the named techniques that win bees: each problem comes with an explanation of the method and a full worked solution.
+Training for the Integration Bee? Work through the levels below. Try each problem honestly before revealing its answer — the struggle is where the learning happens. The **Extreme** level introduces the named techniques that win bees: each problem comes with an explanation of the method and a full worked solution.
 
 ::: {.panel-tabset}
 
@@ -12,69 +12,144 @@ Training for the Integration Bee? Work through the levels below. Try each proble
 
 Fundamentals: basic antiderivatives and single substitutions.
 
-1. $\displaystyle\int x^{3} \, dx$
-2. $\displaystyle\int (2x+1)^{5} \, dx$
-3. $\displaystyle\int \cos(3x) \, dx$
-4. $\displaystyle\int x e^{x^{2}} \, dx$
-5. $\displaystyle\int \frac{1}{x \ln x} \, dx$
-6. $\displaystyle\int_{0}^{1} \frac{x}{x^{2}+1} \, dx$
+**1.** $\displaystyle\int x^{3} \, dx$
 
-::: {.callout-tip collapse="true" title="Answer key"}
-1. $\dfrac{x^{4}}{4} + C$
-2. $\dfrac{(2x+1)^{6}}{12} + C$
-3. $\dfrac{\sin(3x)}{3} + C$
-4. $\dfrac{e^{x^{2}}}{2} + C$
-5. $\ln\lvert\ln x\rvert + C$
-6. $\dfrac{1}{2}\ln 2$
+::: {.callout-tip collapse="true" title="Answer"}
+$\dfrac{x^{4}}{4} + C$
+:::
+
+**2.** $\displaystyle\int (2x+1)^{5} \, dx$
+
+::: {.callout-tip collapse="true" title="Answer"}
+$\dfrac{(2x+1)^{6}}{12} + C$
+:::
+
+**3.** $\displaystyle\int \cos(3x) \, dx$
+
+::: {.callout-tip collapse="true" title="Answer"}
+$\dfrac{\sin(3x)}{3} + C$
+:::
+
+**4.** $\displaystyle\int x e^{x^{2}} \, dx$
+
+::: {.callout-tip collapse="true" title="Answer"}
+$\dfrac{e^{x^{2}}}{2} + C$
+:::
+
+**5.** $\displaystyle\int \frac{1}{x \ln x} \, dx$
+
+::: {.callout-tip collapse="true" title="Answer"}
+$\ln\lvert\ln x\rvert + C$
+:::
+
+**6.** $\displaystyle\int_{0}^{1} \frac{x}{x^{2}+1} \, dx$
+
+::: {.callout-tip collapse="true" title="Answer"}
+$\dfrac{1}{2}\ln 2$
 :::
 
 ## 🔵 Intermediate
 
 Integration by parts, trig powers, and partial fractions.
 
-1. $\displaystyle\int x^{2} \ln x \, dx$
-2. $\displaystyle\int e^{x} \sin x \, dx$
-3. $\displaystyle\int \sin^{3}x \cos^{2}x \, dx$
-4. $\displaystyle\int \frac{3x+5}{x^{2}+x-2} \, dx$
-5. $\displaystyle\int \arctan x \, dx$
-6. $\displaystyle\int_{0}^{\pi/2} \sin^{2}x \, dx$
+**1.** $\displaystyle\int x^{2} \ln x \, dx$
 
-::: {.callout-tip collapse="true" title="Answer key"}
-1. $\dfrac{x^{3}}{3}\ln x - \dfrac{x^{3}}{9} + C$
-2. $\dfrac{e^{x}(\sin x - \cos x)}{2} + C$ — apply parts twice, then solve for the integral
-3. $\dfrac{\cos^{5}x}{5} - \dfrac{\cos^{3}x}{3} + C$ — save one $\sin x$, convert the rest to cosines
-4. $\dfrac{1}{3}\ln\lvert x+2\rvert + \dfrac{8}{3}\ln\lvert x-1\rvert + C$
-5. $x\arctan x - \dfrac{1}{2}\ln(1+x^{2}) + C$ — parts with $u = \arctan x$
-6. $\dfrac{\pi}{4}$ — power-reduction: $\sin^{2}x = \tfrac{1-\cos 2x}{2}$
+::: {.callout-tip collapse="true" title="Answer"}
+$\dfrac{x^{3}}{3}\ln x - \dfrac{x^{3}}{9} + C$
+:::
+
+**2.** $\displaystyle\int e^{x} \sin x \, dx$
+
+::: {.callout-tip collapse="true" title="Answer"}
+$\dfrac{e^{x}(\sin x - \cos x)}{2} + C$ — apply parts twice, then solve for the integral
+:::
+
+**3.** $\displaystyle\int \sin^{3}x \cos^{2}x \, dx$
+
+::: {.callout-tip collapse="true" title="Answer"}
+$\dfrac{\cos^{5}x}{5} - \dfrac{\cos^{3}x}{3} + C$ — save one $\sin x$, convert the rest to cosines
+:::
+
+**4.** $\displaystyle\int \frac{3x+5}{x^{2}+x-2} \, dx$
+
+::: {.callout-tip collapse="true" title="Answer"}
+$\dfrac{1}{3}\ln\lvert x+2\rvert + \dfrac{8}{3}\ln\lvert x-1\rvert + C$ — try the [Heaviside cover-up](integration_tricks.qmd) for the coefficients
+:::
+
+**5.** $\displaystyle\int \arctan x \, dx$
+
+::: {.callout-tip collapse="true" title="Answer"}
+$x\arctan x - \dfrac{1}{2}\ln(1+x^{2}) + C$ — parts with $u = \arctan x$
+:::
+
+**6.** $\displaystyle\int_{0}^{\pi/2} \sin^{2}x \, dx$
+
+::: {.callout-tip collapse="true" title="Answer"}
+$\dfrac{\pi}{4}$ — power-reduction: $\sin^{2}x = \tfrac{1-\cos 2x}{2}$
 :::
 
 ## 🟠 Advanced
 
 Trickier substitutions, improper integrals, and a first taste of symmetry.
 
-1. $\displaystyle\int \sec^{3}x \, dx$
-2. $\displaystyle\int \frac{dx}{1+\sqrt{x}}$
-3. $\displaystyle\int_{0}^{\pi} \frac{x \sin x}{1+\cos^{2}x} \, dx$
-4. $\displaystyle\int \frac{dx}{x^{2}\sqrt{x^{2}+4}}$
-5. $\displaystyle\int_{0}^{1} \ln x \, dx$
-6. $\displaystyle\int \frac{x^{2}}{1+x^{6}} \, dx$
+**1.** $\displaystyle\int \sec^{3}x \, dx$
 
-::: {.callout-note collapse="true" title="Hints"}
-1. Parts with $u = \sec x$, $dv = \sec^{2}x \, dx$ — the integral reappears; solve for it.
-2. Substitute $u = \sqrt{x}$ and do polynomial division.
-3. Substitute $x \mapsto \pi - x$ and watch what happens to the $x$ in front. (This is the "King property" — fully explained in the Extreme tab.)
-4. Trig substitution $x = 2\tan\theta$ — or differentiate $\dfrac{\sqrt{x^{2}+4}}{x}$ and be pleasantly surprised.
-5. It's improper at $0$: integrate by parts, then take the limit.
-6. $u = x^{3}$ turns it into an old friend.
+::: {.callout-note collapse="true" title="Hint"}
+Parts with $u = \sec x$, $dv = \sec^{2}x \, dx$ — the integral reappears; solve for it.
 :::
 
-::: {.callout-tip collapse="true" title="Answer key"}
-1. $\dfrac{1}{2}\left(\sec x \tan x + \ln\lvert\sec x + \tan x\rvert\right) + C$
-2. $2\sqrt{x} - 2\ln(1+\sqrt{x}) + C$
-3. $\dfrac{\pi^{2}}{4}$
-4. $-\dfrac{\sqrt{x^{2}+4}}{4x} + C$
-5. $-1$
-6. $\dfrac{1}{3}\arctan(x^{3}) + C$
+::: {.callout-tip collapse="true" title="Answer"}
+$\dfrac{1}{2}\left(\sec x \tan x + \ln\lvert\sec x + \tan x\rvert\right) + C$
+:::
+
+**2.** $\displaystyle\int \frac{dx}{1+\sqrt{x}}$
+
+::: {.callout-note collapse="true" title="Hint"}
+Substitute $u = \sqrt{x}$ and do polynomial division.
+:::
+
+::: {.callout-tip collapse="true" title="Answer"}
+$2\sqrt{x} - 2\ln(1+\sqrt{x}) + C$
+:::
+
+**3.** $\displaystyle\int_{0}^{\pi} \frac{x \sin x}{1+\cos^{2}x} \, dx$
+
+::: {.callout-note collapse="true" title="Hint"}
+Substitute $x \mapsto \pi - x$ and watch what happens to the $x$ in front. (This is the "King property" — fully explained in the Extreme tab.)
+:::
+
+::: {.callout-tip collapse="true" title="Answer"}
+$\dfrac{\pi^{2}}{4}$
+:::
+
+**4.** $\displaystyle\int \frac{dx}{x^{2}\sqrt{x^{2}+4}}$
+
+::: {.callout-note collapse="true" title="Hint"}
+Trig substitution $x = 2\tan\theta$ — or differentiate $\dfrac{\sqrt{x^{2}+4}}{x}$ and be pleasantly surprised.
+:::
+
+::: {.callout-tip collapse="true" title="Answer"}
+$-\dfrac{\sqrt{x^{2}+4}}{4x} + C$
+:::
+
+**5.** $\displaystyle\int_{0}^{1} \ln x \, dx$
+
+::: {.callout-note collapse="true" title="Hint"}
+It's improper at $0$: integrate by parts, then take the limit.
+:::
+
+::: {.callout-tip collapse="true" title="Answer"}
+$-1$
+:::
+
+**6.** $\displaystyle\int \frac{x^{2}}{1+x^{6}} \, dx$
+
+::: {.callout-note collapse="true" title="Hint"}
+$u = x^{3}$ turns it into an old friend.
+:::
+
+::: {.callout-tip collapse="true" title="Answer"}
+$\dfrac{1}{3}\arctan(x^{3}) + C$
 :::
 
 ## 🔴 Extreme
@@ -201,32 +276,76 @@ $$I = \boxed{\frac{\pi}{4}}$$
 
 Real problems from past [MIT Integration Bee](https://math.mit.edu/~yyao1/integrationbee.html) qualifying exams — a small selection reproduced with credit; the [official archive](https://math.mit.edu/~yyao1/integrationbee.html) has complete exams with answer keys back to 2010. Constants of integration are omitted, matching the official keys. Every one of these cracks quickly with something from the [Bag of Tricks](integration_tricks.qmd) — work out *which* trick before you grind.
 
-1. $\displaystyle\int \frac{x+\sqrt{x}}{1+\sqrt{x}} \, dx$  *(2025 Qualifier, #1)*
-2. $\displaystyle\int \frac{dx}{x\ln x + 2x}$  *(2024 Qualifier, #4)*
-3. $\displaystyle\int_{-\pi/2}^{\pi/2} \cos(20x)\sin(25x) \, dx$  *(2025 Qualifier, #5)*
-4. $\displaystyle\int_{-1}^{1} \left(5x^{3}-3x\right)^{2} dx$  *(2024 Qualifier, #8)*
-5. $\displaystyle\int \left(\sec^{4}x - \tan^{4}x\right) dx$  *(2025 Qualifier, #14)*
-6. $\displaystyle\int \csc^{2}(x)\tan^{2024}(x) \, dx$  *(2024 Qualifier, #11)*
-7. $\displaystyle\int_{0}^{\pi/3} \sin(x)\cos\!\left(\frac{\pi}{3}-x\right) dx$  *(2025 Qualifier, #18)*
-8. $\displaystyle\int \frac{x\ln(x)\cos(x) - \sin(x)}{x\ln^{2}(x)} \, dx$  *(2025 Qualifier, #7)*
-9. $\displaystyle\int \left(\frac{\arctan(x)}{1-x^{2}} + \frac{\operatorname{arctanh}(x)}{1+x^{2}}\right) dx$  *(2024 Qualifier, #16)*
-10. $\displaystyle\int_{-\infty}^{\infty} e^{-(x-2024)^{2}/4} \, dx$  *(2024 Qualifier, #13)*
-11. $\displaystyle\int_{0}^{1} \sqrt{x(1-x)} \, dx$  *(2025 Qualifier, #15)*
-12. $\displaystyle\int_{0}^{2\pi} \arccos(\sin x) \, dx$  *(2024 Qualifier, #5)*
+**1.** $\displaystyle\int \frac{x+\sqrt{x}}{1+\sqrt{x}} \, dx$  *(2025 Qualifier, #1)*
 
-::: {.callout-tip collapse="true" title="Answer key (with the trick that cracks each one)"}
-1. $\dfrac{2}{3}x^{3/2}$ — algebra first: $\dfrac{x+\sqrt{x}}{1+\sqrt{x}} = \dfrac{\sqrt{x}(\sqrt{x}+1)}{1+\sqrt{x}} = \sqrt{x}$
-2. $\ln(\ln x + 2)$ — factor out $x$; then $u = \ln x + 2$
-3. $0$ — parity: even $\times$ odd is odd, and the bounds are symmetric
-4. $\dfrac{8}{7}$ — expand and use even symmetry: $2\left(\tfrac{25}{7} - 6 + 3\right)$
-5. $2\tan x - x$ — factor: $\sec^{4}-\tan^{4} = (\sec^{2}+\tan^{2})(\underbrace{\sec^{2}-\tan^{2}}_{=1}) = 2\sec^{2}x - 1$
-6. $\dfrac{\tan^{2023}(x)}{2023}$ — $\csc^{2}x\tan^{2024}x = \tan^{2022}x\sec^{2}x$, then $u = \tan x$
-7. $\dfrac{\pi}{4\sqrt{3}}$ — product-to-sum: $\tfrac{1}{2}\left[\sin\tfrac{\pi}{3} + \sin\left(2x-\tfrac{\pi}{3}\right)\right]$; the oscillating part integrates to $0$
-8. $\dfrac{\sin x}{\ln x}$ — reverse quotient rule: the integrand is exactly $\dfrac{d}{dx}\dfrac{\sin x}{\ln x}$
-9. $\arctan(x)\operatorname{arctanh}(x)$ — reverse product rule
-10. $2\sqrt{\pi}$ — shift ($u = x-2024$) and scale ($u = 2v$) the Gaussian: $2\int_{-\infty}^{\infty} e^{-v^{2}}dv$
-11. $\dfrac{\pi}{8}$ — geometry: $y = \sqrt{x(1-x)}$ is a semicircle of radius $\tfrac{1}{2}$
-12. $\pi^{2}$ — $\arccos(\sin x) = \tfrac{\pi}{2} - \arcsin(\sin x)$, and the triangle wave $\arcsin(\sin x)$ integrates to $0$ over a full period
+::: {.callout-tip collapse="true" title="Answer & trick"}
+$\dfrac{2}{3}x^{3/2}$ — algebra first: $\dfrac{x+\sqrt{x}}{1+\sqrt{x}} = \dfrac{\sqrt{x}(\sqrt{x}+1)}{1+\sqrt{x}} = \sqrt{x}$
+:::
+
+**2.** $\displaystyle\int \frac{dx}{x\ln x + 2x}$  *(2024 Qualifier, #4)*
+
+::: {.callout-tip collapse="true" title="Answer & trick"}
+$\ln(\ln x + 2)$ — factor out $x$; then $u = \ln x + 2$
+:::
+
+**3.** $\displaystyle\int_{-\pi/2}^{\pi/2} \cos(20x)\sin(25x) \, dx$  *(2025 Qualifier, #5)*
+
+::: {.callout-tip collapse="true" title="Answer & trick"}
+$0$ — parity: even $\times$ odd is odd, and the bounds are symmetric
+:::
+
+**4.** $\displaystyle\int_{-1}^{1} \left(5x^{3}-3x\right)^{2} dx$  *(2024 Qualifier, #8)*
+
+::: {.callout-tip collapse="true" title="Answer & trick"}
+$\dfrac{8}{7}$ — expand and use even symmetry: $2\left(\tfrac{25}{7} - 6 + 3\right)$
+:::
+
+**5.** $\displaystyle\int \left(\sec^{4}x - \tan^{4}x\right) dx$  *(2025 Qualifier, #14)*
+
+::: {.callout-tip collapse="true" title="Answer & trick"}
+$2\tan x - x$ — factor: $\sec^{4}-\tan^{4} = (\sec^{2}+\tan^{2})(\underbrace{\sec^{2}-\tan^{2}}_{=1}) = 2\sec^{2}x - 1$
+:::
+
+**6.** $\displaystyle\int \csc^{2}(x)\tan^{2024}(x) \, dx$  *(2024 Qualifier, #11)*
+
+::: {.callout-tip collapse="true" title="Answer & trick"}
+$\dfrac{\tan^{2023}(x)}{2023}$ — $\csc^{2}x\tan^{2024}x = \tan^{2022}x\sec^{2}x$, then $u = \tan x$
+:::
+
+**7.** $\displaystyle\int_{0}^{\pi/3} \sin(x)\cos\!\left(\frac{\pi}{3}-x\right) dx$  *(2025 Qualifier, #18)*
+
+::: {.callout-tip collapse="true" title="Answer & trick"}
+$\dfrac{\pi}{4\sqrt{3}}$ — product-to-sum: $\tfrac{1}{2}\left[\sin\tfrac{\pi}{3} + \sin\left(2x-\tfrac{\pi}{3}\right)\right]$; the oscillating part integrates to $0$
+:::
+
+**8.** $\displaystyle\int \frac{x\ln(x)\cos(x) - \sin(x)}{x\ln^{2}(x)} \, dx$  *(2025 Qualifier, #7)*
+
+::: {.callout-tip collapse="true" title="Answer & trick"}
+$\dfrac{\sin x}{\ln x}$ — reverse quotient rule: the integrand is exactly $\dfrac{d}{dx}\dfrac{\sin x}{\ln x}$
+:::
+
+**9.** $\displaystyle\int \left(\frac{\arctan(x)}{1-x^{2}} + \frac{\operatorname{arctanh}(x)}{1+x^{2}}\right) dx$  *(2024 Qualifier, #16)*
+
+::: {.callout-tip collapse="true" title="Answer & trick"}
+$\arctan(x)\operatorname{arctanh}(x)$ — reverse product rule
+:::
+
+**10.** $\displaystyle\int_{-\infty}^{\infty} e^{-(x-2024)^{2}/4} \, dx$  *(2024 Qualifier, #13)*
+
+::: {.callout-tip collapse="true" title="Answer & trick"}
+$2\sqrt{\pi}$ — shift ($u = x-2024$) and scale ($u = 2v$) the Gaussian: $2\int_{-\infty}^{\infty} e^{-v^{2}}dv$
+:::
+
+**11.** $\displaystyle\int_{0}^{1} \sqrt{x(1-x)} \, dx$  *(2025 Qualifier, #15)*
+
+::: {.callout-tip collapse="true" title="Answer & trick"}
+$\dfrac{\pi}{8}$ — geometry: $y = \sqrt{x(1-x)}$ is a semicircle of radius $\tfrac{1}{2}$
+:::
+
+**12.** $\displaystyle\int_{0}^{2\pi} \arccos(\sin x) \, dx$  *(2024 Qualifier, #5)*
+
+::: {.callout-tip collapse="true" title="Answer & trick"}
+$\pi^{2}$ — $\arccos(\sin x) = \tfrac{\pi}{2} - \arcsin(\sin x)$, and the triangle wave $\arcsin(\sin x)$ integrates to $0$ over a full period
 :::
 
 :::
