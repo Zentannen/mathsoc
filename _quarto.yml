@@ -59,5 +59,8 @@ website:
 
 format:
   html:
-    theme: [cosmo, theme.scss]
+    theme:
+      light: [cosmo, theme.scss]
+      dark: [cosmo, theme.scss, theme-dark.scss]
+    respect-user-color-scheme: true
     toc: true

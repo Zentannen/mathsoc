@@ -1,0 +1,31 @@
+/*-- scss:defaults --*/
+
+// Dark-mode palette: same brand blues, dark surfaces.
+// Layered after theme.scss, so these values win in the dark theme.
+
+$blue: #6db3f2;
+$mist: #16233b;
+$ink: #d7e0ec;
+
+$surface: #101c31;
+$surface-2: #16233b;
+$border-soft: #24365a;
+$border-strong: #35507e;
+$text-soft: #a7b4c8;
+
+$body-bg: #0b1424;
+$body-color: #d7e0ec;
+$headings-color: #edf3fa;
+$link-color: #7db8f0;
+$primary: #2f7fd6;
+
+$code-block-bg: #101c31;
+$code-bg: #16233b;
+$code-color: #9ecbff;
+
+/*-- scss:rules --*/
+
+// Table hover tint reads better slightly stronger on dark
+.table tbody tr:hover {
+  background-color: rgba(63, 167, 224, 0.12);
+}
