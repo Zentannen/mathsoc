@@ -197,6 +197,38 @@ $$I = \boxed{\frac{\pi}{4}}$$
 — for *any* exponent in place of $\pi$. Try it with $x^{e}$, $x^{100}$, or $x^{\sqrt{2}}$: same answer.
 :::
 
+## 🏛️ MIT Qualifiers
+
+Real problems from past [MIT Integration Bee](https://math.mit.edu/~yyao1/integrationbee.html) qualifying exams — a small selection reproduced with credit; the [official archive](https://math.mit.edu/~yyao1/integrationbee.html) has complete exams with answer keys back to 2010. Constants of integration are omitted, matching the official keys. Every one of these cracks quickly with something from the [Bag of Tricks](integration_tricks.qmd) — work out *which* trick before you grind.
+
+1. $\displaystyle\int \frac{x+\sqrt{x}}{1+\sqrt{x}} \, dx$  *(2025 Qualifier, #1)*
+2. $\displaystyle\int \frac{dx}{x\ln x + 2x}$  *(2024 Qualifier, #4)*
+3. $\displaystyle\int_{-\pi/2}^{\pi/2} \cos(20x)\sin(25x) \, dx$  *(2025 Qualifier, #5)*
+4. $\displaystyle\int_{-1}^{1} \left(5x^{3}-3x\right)^{2} dx$  *(2024 Qualifier, #8)*
+5. $\displaystyle\int \left(\sec^{4}x - \tan^{4}x\right) dx$  *(2025 Qualifier, #14)*
+6. $\displaystyle\int \csc^{2}(x)\tan^{2024}(x) \, dx$  *(2024 Qualifier, #11)*
+7. $\displaystyle\int_{0}^{\pi/3} \sin(x)\cos\!\left(\frac{\pi}{3}-x\right) dx$  *(2025 Qualifier, #18)*
+8. $\displaystyle\int \frac{x\ln(x)\cos(x) - \sin(x)}{x\ln^{2}(x)} \, dx$  *(2025 Qualifier, #7)*
+9. $\displaystyle\int \left(\frac{\arctan(x)}{1-x^{2}} + \frac{\operatorname{arctanh}(x)}{1+x^{2}}\right) dx$  *(2024 Qualifier, #16)*
+10. $\displaystyle\int_{-\infty}^{\infty} e^{-(x-2024)^{2}/4} \, dx$  *(2024 Qualifier, #13)*
+11. $\displaystyle\int_{0}^{1} \sqrt{x(1-x)} \, dx$  *(2025 Qualifier, #15)*
+12. $\displaystyle\int_{0}^{2\pi} \arccos(\sin x) \, dx$  *(2024 Qualifier, #5)*
+
+::: {.callout-tip collapse="true" title="Answer key (with the trick that cracks each one)"}
+1. $\dfrac{2}{3}x^{3/2}$ — algebra first: $\dfrac{x+\sqrt{x}}{1+\sqrt{x}} = \dfrac{\sqrt{x}(\sqrt{x}+1)}{1+\sqrt{x}} = \sqrt{x}$
+2. $\ln(\ln x + 2)$ — factor out $x$; then $u = \ln x + 2$
+3. $0$ — parity: even $\times$ odd is odd, and the bounds are symmetric
+4. $\dfrac{8}{7}$ — expand and use even symmetry: $2\left(\tfrac{25}{7} - 6 + 3\right)$
+5. $2\tan x - x$ — factor: $\sec^{4}-\tan^{4} = (\sec^{2}+\tan^{2})(\underbrace{\sec^{2}-\tan^{2}}_{=1}) = 2\sec^{2}x - 1$
+6. $\dfrac{\tan^{2023}(x)}{2023}$ — $\csc^{2}x\tan^{2024}x = \tan^{2022}x\sec^{2}x$, then $u = \tan x$
+7. $\dfrac{\pi}{4\sqrt{3}}$ — product-to-sum: $\tfrac{1}{2}\left[\sin\tfrac{\pi}{3} + \sin\left(2x-\tfrac{\pi}{3}\right)\right]$; the oscillating part integrates to $0$
+8. $\dfrac{\sin x}{\ln x}$ — reverse quotient rule: the integrand is exactly $\dfrac{d}{dx}\dfrac{\sin x}{\ln x}$
+9. $\arctan(x)\operatorname{arctanh}(x)$ — reverse product rule
+10. $2\sqrt{\pi}$ — shift ($u = x-2024$) and scale ($u = 2v$) the Gaussian: $2\int_{-\infty}^{\infty} e^{-v^{2}}dv$
+11. $\dfrac{\pi}{8}$ — geometry: $y = \sqrt{x(1-x)}$ is a semicircle of radius $\tfrac{1}{2}$
+12. $\pi^{2}$ — $\arccos(\sin x) = \tfrac{\pi}{2} - \arcsin(\sin x)$, and the triangle wave $\arcsin(\sin x)$ integrates to $0$ over a full period
+:::
+
 :::
 
 ## Want More?
