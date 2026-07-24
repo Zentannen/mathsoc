@@ -29,3 +29,33 @@ $code-color: #9ecbff;
 .table tbody tr:hover {
   background-color: rgba(63, 167, 224, 0.12);
 }
+
+// Callouts: Quarto keeps light-mode borders and header tints in dark
+// themes, which glow harshly. Use subtle dark borders and translucent
+// per-type header tints instead (left accent border keeps its color).
+div.callout.callout-style-default {
+  border-top-color: $border-soft;
+  border-right-color: $border-soft;
+  border-bottom-color: $border-soft;
+
+  > .callout-header {
+    background-color: $surface-2;
+  }
+}
+
+div.callout-tip.callout-style-default > .callout-header {
+  background-color: rgba(63, 182, 24, 0.14);
+}
+
+div.callout-note.callout-style-default > .callout-header {
+  background-color: rgba(93, 155, 245, 0.14);
+}
+
+div.callout-important.callout-style-default > .callout-header {
+  background-color: rgba(226, 84, 84, 0.16);
+}
+
+div.callout-warning.callout-style-default > .callout-header,
+div.callout-caution.callout-style-default > .callout-header {
+  background-color: rgba(240, 173, 78, 0.14);
+}

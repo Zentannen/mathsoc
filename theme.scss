@@ -322,6 +322,11 @@ h3 {
 // ---------- Tabsets (practice levels) ----------
 
 .panel-tabset {
+  .tab-content {
+    border: none;
+    padding: 0.5rem 0 0;
+  }
+
   .nav-tabs {
     border-bottom: none;
     gap: 0.4rem;
